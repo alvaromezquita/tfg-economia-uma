@@ -92,4 +92,4 @@ Si deseas contribuir, abre un "issue" o crea un "pull request" en el repositorio
 
 ### Agradecimientos 
 
-Especial agradecimiento al profesor Gonzalo Fernández de Córdoba Martos. Fue mi tutor de TFG y quien me motivo a realizar este proyecto.
+Especial agradecimiento al profesor Gonzalo Fernández de Córdoba Martos. Fue mi tutor de TFG y quien me motivó a realizar este proyecto.
