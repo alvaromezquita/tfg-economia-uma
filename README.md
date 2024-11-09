@@ -44,7 +44,7 @@ Para trabajar localmente con LaTeX, sigue estos pasos:
 2. **Instala un editor de TeX** como TeXworks o TeXmaker.
 3. **Instala un lector de PDFs**. Se recomienda SumatraPDF por ser ligero, pero también puedes usar Adobe Acrobat.
 
-Después de configurar tu entorno local, descarga la carpeta "Proyecto Platilla UMA" del repositorio de [GitHub](https://github.com/alvaromezquita/tfg-economia-uma) (para ello le das al boton verde code y descargas el .zip y lo descomprimes). Corretamente instalado el entorno LaTeX, `main.tex` debería compilar correctamente el PDF.
+Después de configurar tu entorno local, descarga la carpeta "Proyecto Platilla UMA" del repositorio de [GitHub](https://github.com/alvaromezquita/tfg-economia-uma) (para ello le das al boton verde "code" y descargas el .zip y lo descomprimes). Corretamente instalado el entorno LaTeX, `main.tex` debería compilar correctamente el PDF.
 
 ---
 
