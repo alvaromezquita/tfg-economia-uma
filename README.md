@@ -86,7 +86,7 @@ El texto completo de la licencia está en el archivo `LICENSE.txt` o en [LaTeX P
 ### Contribuciones
 
 Si deseas contribuir, abre un "issue" o crea un "pull request" en el repositorio de GitHub:  
-[https://github.com/usuario/repositorio](https://github.com/usuario/repositorio)
+[https://github.com/alvaromezquita/tfg-economia-uma](https://github.com/alvaromezquita/tfg-economia-uma)
 
 --- 
 
