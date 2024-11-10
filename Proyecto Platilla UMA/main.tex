@@ -10,7 +10,7 @@
 
 
 
-\documentclass[12pt,a4paper]{report}
+\documentclass[13pt,a4paper]{report}
 
 %Paquetes. 
 
@@ -100,7 +100,6 @@
   BoldFont = GARA-BD
 ]{GARA}
 
-% Crear un comando auxiliar para definir captions con fuente de 12pt
 
 \captionsetup{
   font={it} % Definimos explícitamente la fuente aquí
@@ -339,12 +338,12 @@ Phasellus fringilla, magna nec tincidunt imperdiet, lectus ipsum congue mi, eu c
 
 \begin{center}
     \centering % Centra el caption
-    \captionof{figure}{Logo de la facultad} %  Nombre de la figura
+    \captionof{figure}{Logo de la facultad} % Nombre de la figura
     \includegraphics[width=\linewidth]{logo.png} % Imagen
     \label{fig:imagen_facultad} % Etiqueta para referenciar
     \par % Termina la alineación centrada
     \raggedright % Restablece la alineación a la izquierda 
-    \textit{Fuente: Facultad de CC. Económicas y EE. (2017).} % Fuente
+    {\fontsize{12}{14}\selectfont\textit{Fuente: Facultad de CC. Económicas y EE. (2017).}} % Fuente en 12 puntos y en itálico
 \end{center}
 
 \vspace{12pt}
