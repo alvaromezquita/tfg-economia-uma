@@ -28,7 +28,7 @@ La mayoría de los trabajos de fin de grado (TFG) de economía no requieren una 
 
 Sin embargo, en casos donde el TFG incluye matemáticas complejas o programación, LaTeX se convierte en una mejor opción. Este entorno permite centrarse en el contenido sin preocuparse por problemas de formato y automatiza tareas como la gestión de referencias y el diseño.
 
-La Facultad de Ciencias Económicas y Empresariales de la Universidad de Málaga exige un formato específico para estos trabajos. Esta plantilla LaTeX está diseñada para cumplir con esas normas y facilitar al estudiante el enfoque en su investigación.
+La *Facultad de Ciencias Económicas y Empresariales de la Universidad de Málaga* exige un formato específico para estos trabajos. Esta plantilla LaTeX está diseñada para cumplir con esas normas y facilitar al estudiante el enfoque en su investigación.
 
 Si eres nuevo en LaTeX, se recomienda buscar tutoriales para familiarizarte con el entorno. Incluso si tienes experiencia, sigue las instrucciones que se describen a continuación.
 
