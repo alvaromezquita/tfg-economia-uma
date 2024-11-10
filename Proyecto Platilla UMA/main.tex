@@ -240,11 +240,11 @@
 
 \newpage
 \thispagestyle{empty} % Sin numeración de página en esta página
-\noindent {\fontsize{16}{19.2}\selectfont \textbf{Declaración de originalidad y de visto bueno del tutor o tutora}} 
+\noindent {\fontsize{16}{19.2}\selectfont \textbf{Declaración de originalidad y de visto bueno del tutor o tutora}} % "Declaración de originalidad" formateado
 
 \vspace{12pt}
 
-Yo, \makebox[2cm]{\dotfill}, con DNI  \makebox[2cm]{\dotfill}, declaro: 
+Yo, \makebox[2cm]{\dotfill}, con DNI  \makebox[2cm]{\dotfill}, declaro:  %Eliminar \makebox[]{\dotfill}
 
 \vspace{12pt}
 
@@ -254,9 +254,9 @@ Que este Trabajo Fin de Grado que presento para su evaluación y defensa es orig
 
 Y que cuento con el visto bueno de mi tutor/a para solicitar la defensa en este llamamiento.
 \begin{flushright}
-    Málaga a  \makebox[2cm]{\dotfill} \\
+    Málaga a  \makebox[2cm]{\dotfill} \\ %Eliminar \makebox[]{\dotfill}
     \vspace{5cm}
-     Firmado: \makebox[5cm]{\dotfill}
+     Firmado: \makebox[5cm]{\dotfill} %Eliminar \makebox[]{\dotfill}
 \end{flushright}
 
 
@@ -264,15 +264,15 @@ Y que cuento con el visto bueno de mi tutor/a para solicitar la defensa en este 
 \newpage
 \pagenumbering{roman} % Numeración romana para el índice y resumen
 
-% Índice
-\renewcommand{\contentsname}{ÍNDICE}
+% Índice (NO TOCAR)
+\renewcommand{\contentsname}{ÍNDICE} 
 \tableofcontents
 
 % Resumen, Palabras Clave y Título en Inglés 
 \newpage 
-\pagenumbering{arabic} 
-\noindent {\fontsize{16}{19.2}\selectfont \textbf{Título en inglés}} 
-\addcontentsline{toc}{section}{Título en inglés} 
+\pagenumbering{arabic} %Cambia la numeracion a romana
+\noindent {\fontsize{16}{19.2}\selectfont \textbf{Título en inglés}} % Apartado "Título en ingles" formateado
+\addcontentsline{toc}{section}{Título en inglés} % Añadir al índice
 
 \vspace{12pt}
 
@@ -286,6 +286,10 @@ Y que cuento con el visto bueno de mi tutor/a para solicitar la defensa en este 
 \vspace{12pt}
 
 %Resumen del trabajo
+[Estos tres apartados solo deben ocupar una pagina]
+
+\vspace{12pt}
+
 (Aquí debes escribir el resumen de tu TFG. A continuación un texto de ejemplo)
 
 \vspace{12pt}
@@ -299,7 +303,7 @@ Phasellus fringilla, magna nec tincidunt imperdiet, lectus ipsum congue mi, eu c
 \vspace{12pt}
 
 {\fontsize{16}{19.2}\selectfont \textbf{Palabras clave}}
-\addcontentsline{toc}{section}{Palabras Clave} 
+\addcontentsline{toc}{section}{Palabras Clave} % Añadir al índice
 
 \vspace{12pt}
 
@@ -326,24 +330,24 @@ Phasellus fringilla, magna nec tincidunt imperdiet, lectus ipsum congue mi, eu c
 (Incluir aquí el desarrollo del trabajo)
 
 
-\vspace{12pt}
-
 \subsection*{Subepígrafe} 
-\addcontentsline{toc}{subsection}{Subepígrafe}
+\addcontentsline{toc}{subsection}{Subepígrafe} % Añadir al índice
 
 
 \subsubsection*{Subsubepígrafe} 
-\addcontentsline{toc}{subsubsection}{Subsubepígrafe}
+\addcontentsline{toc}{subsubsection}{Subsubepígrafe} % Añadir al índice
 
 \begin{center}
-    \centering
-    \captionof{figure}{Logo de la facultad} % 
+    \centering % Centra el caption
+    \captionof{figure}{Logo de la facultad} %  Nombre de la figura
     \includegraphics[width=\linewidth]{logo.png} % Imagen
     \label{fig:imagen_facultad} % Etiqueta para referenciar
     \par % Termina la alineación centrada
     \raggedright % Restablece la alineación a la izquierda 
-    \textit{Fuente: Facultad de CC. Económicas y EE. (2017).}
+    \textit{Fuente: Facultad de CC. Económicas y EE. (2017).} % Fuente
 \end{center}
+
+\vspace{12pt}
 
 Este es un ejemplo de referencia de la figura/imagen \ref{fig:imagen_facultad}, y este es un ejemplo para referenciar la bibliografía \citep{tfg_sample}
 
@@ -353,6 +357,7 @@ Aquí otro ejemplo con un artículo \citep{baccini2007edgeworth}
 
 \vspace{12pt}
 
+
 \section{Conclusión} 
 
 \vspace{12pt}
@@ -360,8 +365,10 @@ Aquí otro ejemplo con un artículo \citep{baccini2007edgeworth}
 (Incluir aquí el conclusión del trabajo)
 
 
+% Bibliografía (NO TOCAR)
 
-\bibliographystyle{apalike} 
-\bibliography{bib_tfg} 
-\addcontentsline{toc}{section}{Referencias} 
+\bibliographystyle{apalike} % Establecer formato APA 7a Edición
+\renewcommand{\bibname}{\fontsize{16}{20}\selectfont Bibliografía} % Nombre y formato de la bibliografía
+\bibliography{bib_tfg} % Llamada a la bibliografía
+\addcontentsline{toc}{section}{Bibliografía} % Añadir al índice
 \end{document}
