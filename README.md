@@ -64,7 +64,7 @@ Si tienes experiencia, puedes modificar la plantilla a tu gusto, pero siguiendo 
 - **Comandos `\makebox[]{\dotfill}`:** Puedes eliminarlos y reemplazarlos con el texto requerido.  
 - **Imágenes:** Sube la imagen al proyecto (en Overleaf o en tu carpeta local) y utiliza el código proporcionado para insertar figuras o gráficos.  
 - **Referencias:** Usa el archivo `bib_tfg.bib` para incluir tus referencias en formato BibTeX. Solo aparecerán al final las citas utilizadas en el documento.
-
+- **Apartados del Índice:** A la hora de utilizar \section y \subsection, ten en cuenta que \section debe ir solo y \subsection debe ir junto con el comando \addcontentsline para incluirlo correctamente en el índice
 ---
 
 ### Licencia
