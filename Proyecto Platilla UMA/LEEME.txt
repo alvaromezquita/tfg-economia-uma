@@ -45,7 +45,7 @@ En caso de querer trabajar con el localmente (basicamente en un ordenador y no e
 
 3. Por último, deberás tener instalado un lector de PDFs en el ordenador. Recomiendo SumatraPDF por ser ligero y no bloquear los PDFs, pero puedes usar Adobe Acrobat si lo tienes instalado 
 
-Una vez configurado tu entorno LaTeX local, deberás crear una carpeta que contenga TODOS LOS ARCHIVOS de esta plantilla. Correctamente instalado, "main.tex" debería poder compilarse correctamente.
+Después de configurar tu entorno local, descarga la carpeta "Proyecto Platilla UMA" del repositorio de GitHub (para ello le das al boton verde "code" y descargas el .zip y lo descomprimes). Corretamente instalado el entorno LaTeX, main.tex debería compilar correctamente el PDF.
 
 
 # Instrucciones de uso 
@@ -73,7 +73,9 @@ Algunos puntos importantes a mencionar son:
 
 - Solo saldrá al final del documento aquellas referencias que hayan sido citadas en el documento. 
 
-- No hay ninguna norma que exiga una estructura "Introduccion, Desarrollo y Conclusión", por lo que puedes modificarlo a tu gusto.
+- No hay ninguna norma que exiga una estructura "Introduccion, Desarrollo y Conclusión", por lo que puedes modificarlo a tu gusto. 
+
+-A la hora de utilizar \section y \subsection, ten en cuenta que \section debe ir solo y \subsection debe ir junto con el comando \addcontentsline para incluirlo correctamente en el índice
 
 
 # Licencia 
@@ -94,4 +96,8 @@ El texto completo de la licencia se puede encontrar en el archivo `LICENSE.txt` 
 
 # Contribuciones 
 
-Si deseas contribuir a este proyecto, abre un "issue" o crea un "pull request" en nuestro repositorio de GitHub: https://github.com/usuario/repositorio
+Si deseas contribuir a este proyecto, abre un "issue" o crea un "pull request" en nuestro repositorio de GitHub: https://github.com/alvaromezquita/tfg-economia-uma  
+
+# Agradecimientos 
+
+Especial agradecimiento al profesor Gonzalo Fernández de Córdoba Martos. Fue mi tutor de TFG y quien me motivó a realizar este proyecto.
