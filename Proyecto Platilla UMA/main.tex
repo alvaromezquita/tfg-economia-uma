@@ -23,7 +23,7 @@
 \usepackage{fancyhdr}
 \usepackage{setspace}
 \usepackage[spanish]{babel}
-\usepackage{csquotes}
+%\usepackage{csquotes}
 \usepackage{hyperref}
 \usepackage{apacite}
 \usepackage{setspace}
@@ -37,14 +37,15 @@
 \usepackage{graphicx}
 \usepackage{graphics} 
 \usepackage{graphpap}    
-\usepackage[utf8x]{inputenc}   
+%\usepackage[utf8x]{inputenc}   
 \usepackage{booktabs}
-\usepackage[autostyle]{csquotes} 
-\usepackage{floatrow}
+%\usepackage[autostyle]{csquotes} 
+%\usepackage{floatrow}
 \usepackage{natbib} 
 \usepackage{fvextra}
 \usepackage{float}
 \usepackage{caption} 
+%\usepackage[font=12]{caption} % Para cambiar el tamaño del caption
 \usepackage{anyfontsize}
 \usepackage{chngcntr}
 \usepackage{titletoc}
@@ -99,15 +100,11 @@
   BoldFont = GARA-BD
 ]{GARA}
 
-\captionsetup[figure]{
-  labelfont={it,12p}, % Fuente en cursiva y tamaño 12pt para "Figura X"
-  textfont={it,12p},  % Fuente en cursiva y tamaño 12pt para el texto de la caption
-}
+% Crear un comando auxiliar para definir captions con fuente de 12pt
 
-\captionsetup[table]{
-  labelfont={it,12p}, % Fuente en cursiva y tamaño 12pt para "Tabla X"
-  textfont={it,12p},  % Fuente en cursiva y tamaño 12pt para el texto de la caption
-} 
+\captionsetup{
+  font={it} % Definimos explícitamente la fuente aquí
+}
 
 \titleformat{\section}
   {\fontsize{16}{18}\selectfont\bfseries\MakeUppercase} % Negrita, tamaño 16pt, todo en mayúsculas
@@ -167,12 +164,13 @@
   {} % Espacio entre la etiqueta y el título
   {\titlerule*[0.5pc]{.}\contentspage} % Formato del título
 
-% Estilo para las subsubsecciones (en cursiva)
 \titlecontents{subsubsection}
-  [3em] % Espacio izquierdo
+  [3em] % Indentación para subsubsección
   {\thecontentslabel\hspace{1em}} % Formato del número de subsubsección
   {} % Espacio entre la etiqueta y el título
-  {\titlerule*[0.5pc]{.}\contentspage} % Formato del título
+  {} % No se usa prefijo antes del título
+  {\titlerule*[0.5pc]{.}\contentspage} % Puntos de conexión y número de página
+
   
 % Definir el formato para las secciones en el TOC (table of contents)
 \titlecontents{section}
