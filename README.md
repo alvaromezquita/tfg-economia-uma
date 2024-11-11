@@ -1,12 +1,12 @@
 
-### PLATILLA_TFG_UMA ###
-### Platilla de TFG en LaTeX 2024-2025###
+# PLATILLA_TFG_UMA 
+# Platilla de TFG en LaTeX 2024-2025
 
 Autor: Álvaro Mezquita Martínez 
 
 Contacto: 
     - E-mail: alvaromezquitam@gmail.com
-    - Linkedin: https://www.linkedin.com/in/%C3%A1lvaro-mezquita-mart%C3%ADnez-35956919a?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BdBE%2FVfG9S72HFS7%2BJsttxA%3D%3D 
+    - Linkedin: https://www.linkedin.com/in/%C3%A1lvaro-mezquita-mart%C3%ADnez-35956919a/
     - GitHub: https://github.com/alvaromezquita
 
 
