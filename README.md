@@ -44,7 +44,7 @@ Para trabajar localmente con LaTeX, sigue estos pasos:
 2. **Instala un editor de TeX** como TeXworks o TeXmaker.
 3. **Instala un lector de PDFs**. Se recomienda SumatraPDF por ser ligero, pero también puedes usar Adobe Acrobat.
 
-Después de configurar tu entorno local, descarga la carpeta "Proyecto Platilla UMA" del repositorio de [GitHub](https://github.com/alvaromezquita/tfg-economia-uma) (para ello le das al boton verde "code" y descargas el .zip y lo descomprimes). Corretamente instalado el entorno LaTeX, `main.tex` debería compilar correctamente el PDF.
+Después de configurar tu entorno local, descarga la carpeta "Proyecto Platilla UMA" del repositorio de [GitHub](https://github.com/alvaromezquita/tfg-economia-uma/archive/refs/heads/version-2.zip) (para ello le das al boton verde "code" y descargas el .zip y lo descomprimes). Corretamente instalado el entorno LaTeX, `main.tex` debería compilar correctamente el PDF.
 
 ---
 
@@ -64,7 +64,7 @@ Si tienes experiencia, puedes modificar la plantilla a tu gusto, pero siguiendo 
 - **Comandos `\makebox[]{\dotfill}`:** Puedes eliminarlos y reemplazarlos con el texto requerido.  
 - **Imágenes:** Sube la imagen al proyecto (en Overleaf o en tu carpeta local) y utiliza el código proporcionado para insertar figuras o gráficos.  
 - **Referencias:** Usa el archivo `bib_tfg.bib` para incluir tus referencias en formato BibTeX. Solo aparecerán al final las citas utilizadas en el documento.
-
+- **Apartados del Índice:** A la hora de utilizar \section y \subsection, ten en cuenta que \section debe ir solo y \subsection debe ir junto con el comando \addcontentsline para incluirlo correctamente en el índice
 ---
 
 ### Licencia

@@ -10,7 +10,7 @@
 
 
 
-\documentclass[12pt,a4paper]{report}
+\documentclass[13pt,a4paper]{report}
 
 %Paquetes. 
 
@@ -23,7 +23,7 @@
 \usepackage{fancyhdr}
 \usepackage{setspace}
 \usepackage[spanish]{babel}
-\usepackage{csquotes}
+%\usepackage{csquotes}
 \usepackage{hyperref}
 \usepackage{apacite}
 \usepackage{setspace}
@@ -37,14 +37,15 @@
 \usepackage{graphicx}
 \usepackage{graphics} 
 \usepackage{graphpap}    
-\usepackage[utf8x]{inputenc}   
+%\usepackage[utf8x]{inputenc}   
 \usepackage{booktabs}
-\usepackage[autostyle]{csquotes} 
-\usepackage{floatrow}
+%\usepackage[autostyle]{csquotes} 
+%\usepackage{floatrow}
 \usepackage{natbib} 
 \usepackage{fvextra}
 \usepackage{float}
 \usepackage{caption} 
+%\usepackage[font=12]{caption} % Para cambiar el tamaño del caption
 \usepackage{anyfontsize}
 \usepackage{chngcntr}
 \usepackage{titletoc}
@@ -99,15 +100,10 @@
   BoldFont = GARA-BD
 ]{GARA}
 
-\captionsetup[figure]{
-  labelfont={it,12p}, % Fuente en cursiva y tamaño 12pt para "Figura X"
-  textfont={it,12p},  % Fuente en cursiva y tamaño 12pt para el texto de la caption
-}
 
-\captionsetup[table]{
-  labelfont={it,12p}, % Fuente en cursiva y tamaño 12pt para "Tabla X"
-  textfont={it,12p},  % Fuente en cursiva y tamaño 12pt para el texto de la caption
-} 
+\captionsetup{
+  font={it} % Definimos explícitamente la fuente aquí
+}
 
 \titleformat{\section}
   {\fontsize{16}{18}\selectfont\bfseries\MakeUppercase} % Negrita, tamaño 16pt, todo en mayúsculas
@@ -167,12 +163,13 @@
   {} % Espacio entre la etiqueta y el título
   {\titlerule*[0.5pc]{.}\contentspage} % Formato del título
 
-% Estilo para las subsubsecciones (en cursiva)
 \titlecontents{subsubsection}
-  [3em] % Espacio izquierdo
+  [3em] % Indentación para subsubsección
   {\thecontentslabel\hspace{1em}} % Formato del número de subsubsección
   {} % Espacio entre la etiqueta y el título
-  {\titlerule*[0.5pc]{.}\contentspage} % Formato del título
+  {} % No se usa prefijo antes del título
+  {\titlerule*[0.5pc]{.}\contentspage} % Puntos de conexión y número de página
+
   
 % Definir el formato para las secciones en el TOC (table of contents)
 \titlecontents{section}
@@ -242,11 +239,11 @@
 
 \newpage
 \thispagestyle{empty} % Sin numeración de página en esta página
-\noindent {\fontsize{16}{19.2}\selectfont \textbf{Declaración de originalidad y de visto bueno del tutor o tutora}} 
+\noindent {\fontsize{16}{19.2}\selectfont \textbf{Declaración de originalidad y de visto bueno del tutor o tutora}} % "Declaración de originalidad" formateado
 
 \vspace{12pt}
 
-Yo, \makebox[2cm]{\dotfill}, con DNI  \makebox[2cm]{\dotfill}, declaro: 
+Yo, \makebox[2cm]{\dotfill}, con DNI  \makebox[2cm]{\dotfill}, declaro:  %Eliminar \makebox[]{\dotfill}
 
 \vspace{12pt}
 
@@ -256,9 +253,9 @@ Que este Trabajo Fin de Grado que presento para su evaluación y defensa es orig
 
 Y que cuento con el visto bueno de mi tutor/a para solicitar la defensa en este llamamiento.
 \begin{flushright}
-    Málaga a  \makebox[2cm]{\dotfill} \\
+    Málaga a  \makebox[2cm]{\dotfill} \\ %Eliminar \makebox[]{\dotfill}
     \vspace{5cm}
-     Firmado: \makebox[5cm]{\dotfill}
+     Firmado: \makebox[5cm]{\dotfill} %Eliminar \makebox[]{\dotfill}
 \end{flushright}
 
 
@@ -266,15 +263,15 @@ Y que cuento con el visto bueno de mi tutor/a para solicitar la defensa en este 
 \newpage
 \pagenumbering{roman} % Numeración romana para el índice y resumen
 
-% Índice
-\renewcommand{\contentsname}{ÍNDICE}
+% Índice (NO TOCAR)
+\renewcommand{\contentsname}{ÍNDICE} 
 \tableofcontents
 
 % Resumen, Palabras Clave y Título en Inglés 
 \newpage 
-\pagenumbering{arabic} 
-\noindent {\fontsize{16}{19.2}\selectfont \textbf{Título en inglés}} 
-\addcontentsline{toc}{section}{Título en inglés} 
+\pagenumbering{arabic} %Cambia la numeracion a romana
+\noindent {\fontsize{16}{19.2}\selectfont \textbf{Título en inglés}} % Apartado "Título en ingles" formateado
+\addcontentsline{toc}{section}{Título en inglés} % Añadir al índice
 
 \vspace{12pt}
 
@@ -288,6 +285,10 @@ Y que cuento con el visto bueno de mi tutor/a para solicitar la defensa en este 
 \vspace{12pt}
 
 %Resumen del trabajo
+[Estos tres apartados solo deben ocupar una pagina]
+
+\vspace{12pt}
+
 (Aquí debes escribir el resumen de tu TFG. A continuación un texto de ejemplo)
 
 \vspace{12pt}
@@ -301,7 +302,7 @@ Phasellus fringilla, magna nec tincidunt imperdiet, lectus ipsum congue mi, eu c
 \vspace{12pt}
 
 {\fontsize{16}{19.2}\selectfont \textbf{Palabras clave}}
-\addcontentsline{toc}{section}{Palabras Clave} 
+\addcontentsline{toc}{section}{Palabras Clave} % Añadir al índice
 
 \vspace{12pt}
 
@@ -328,24 +329,24 @@ Phasellus fringilla, magna nec tincidunt imperdiet, lectus ipsum congue mi, eu c
 (Incluir aquí el desarrollo del trabajo)
 
 
-\vspace{12pt}
-
 \subsection*{Subepígrafe} 
-\addcontentsline{toc}{subsection}{Subepígrafe}
+\addcontentsline{toc}{subsection}{Subepígrafe} % Añadir al índice
 
 
 \subsubsection*{Subsubepígrafe} 
-\addcontentsline{toc}{subsubsection}{Subsubepígrafe}
+\addcontentsline{toc}{subsubsection}{Subsubepígrafe} % Añadir al índice
 
 \begin{center}
-    \centering
-    \captionof{figure}{Logo de la facultad} % 
+    \centering % Centra el caption
+    \captionof{figure}{Logo de la facultad} % Nombre de la figura
     \includegraphics[width=\linewidth]{logo.png} % Imagen
     \label{fig:imagen_facultad} % Etiqueta para referenciar
     \par % Termina la alineación centrada
     \raggedright % Restablece la alineación a la izquierda 
-    \textit{Fuente: Facultad de CC. Económicas y EE. (2017).}
+    {\fontsize{12}{14}\selectfont\textit{Fuente: Facultad de CC. Económicas y EE. (2017).}} % Fuente en 12 puntos y en itálico
 \end{center}
+
+\vspace{12pt}
 
 Este es un ejemplo de referencia de la figura/imagen \ref{fig:imagen_facultad}, y este es un ejemplo para referenciar la bibliografía \citep{tfg_sample}
 
@@ -355,6 +356,7 @@ Aquí otro ejemplo con un artículo \citep{baccini2007edgeworth}
 
 \vspace{12pt}
 
+
 \section{Conclusión} 
 
 \vspace{12pt}
@@ -362,8 +364,11 @@ Aquí otro ejemplo con un artículo \citep{baccini2007edgeworth}
 (Incluir aquí el conclusión del trabajo)
 
 
+% Bibliografía (NO TOCAR)
 
-\bibliographystyle{apalike} 
-\bibliography{bib_tfg} 
-\addcontentsline{toc}{section}{Referencias} 
+\bibliographystyle{apalike} % Establecer formato APA 7a Edición
+\renewcommand{\bibname}{\fontsize{16}{20}\selectfont Bibliografía} % Nombre y formato de la bibliografía 
+\renewcommand{\bibfont}{\fontsize{13}{15}\selectfont} % Cambiar a 13 puntos el tamaño del texto
+\bibliography{bib_tfg} % Llamada a la bibliografía
+\addcontentsline{toc}{section}{Bibliografía} % Añadir al índice
 \end{document}
