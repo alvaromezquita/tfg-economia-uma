@@ -5,24 +5,21 @@
 Autor: Álvaro Mezquita Martínez 
 
 Contacto: 
-    - E-mail: alvaromezquitam@gmail.com
-    - Linkedin: https://www.linkedin.com/in/%C3%A1lvaro-mezquita-mart%C3%ADnez-35956919a/
-    - GitHub: https://github.com/alvaromezquita
+- E-mail: alvaromezquitam@gmail.com
+- Linkedin: https://www.linkedin.com/in/%C3%A1lvaro-mezquita-mart%C3%ADnez-35956919a/
+- GitHub: https://github.com/alvaromezquita 
 
-
-## LEEME.txt ## 
-
-# Índice 
+## Índice 
 
 1. Introducción 
 2. Instalación
 3. Instrucciones de uso 
-3.1 Otras recomendaciones 
+    3.1 Otras recomendaciones 
 4. Licencia  
 5. Contribuciones
 6. Agradecimientos
 
-# Introducción
+## Introducción
 
 La mayoría de trabajos de fin de grado de cualquier carrera de economía usualmente no tienen una alta carga matemática o informática. El poco uso de formulas o de scripts permite a la mayoría de alumnos utilizar procesadores de texto “What You See Is What You Get” como Microsoft Word o LibreOffice Writer, quienes están más familiarizados con este tipo de tecnología. 
 
@@ -34,7 +31,7 @@ Como la Facultad de Ciencias Económicas y Empresariales de la Universidad de M�
 
 Si eres nuevo usando LaTeX, es altamente recomendable buscar tutoriales porque no es un entorno amigable con el usuario al principio, aunque existen muy buen material en la red que cualquier persona sin experiencia puede entender facilmente. De igual manera, aunque seas experimentado, te recomiendo que sigas las instrucciones que siguen a continuación.
 
-# Instalación local
+## Instalación local
 
 (Puedes ignorar esta parte si vas a utilizar Overleaf.) 
 
@@ -49,7 +46,7 @@ En caso de querer trabajar con el localmente (basicamente en un ordenador y no e
 Después de configurar tu entorno local, descarga la carpeta "Proyecto Platilla UMA" del repositorio de GitHub (para ello le das al boton verde "code" y descargas el .zip y lo descomprimes). Corretamente instalado el entorno LaTeX, main.tex debería compilar correctamente el PDF.
 
 
-# Instrucciones de uso 
+## Instrucciones de uso 
 
 En la carpeta (o el directorio de Overleaf) tendrás dos archivos .tex que tienes que prestar atención: "main.tex" y "config.tex". "main.tex" es el archivo principal donde escribirás todo tu trabajo, mientras que "config.tex" es donde aguarda toda configuracion del documento principal. 
 
@@ -73,7 +70,7 @@ Algunos puntos importantes extra a mencionar son:
 
 - A la hora de utilizar \section y \subsection, ten en cuenta que \section debe ir solo y \subsection debe ir junto con el comando \addcontentsline para incluirlo correctamente en el índice
 
-## Paquetes recomendados
+### Paquetes recomendados
 
 Para ciertos trabajos son altamente recomendables, si no es que necesarias, algunos paquetes que voy a listar: 
 
@@ -81,7 +78,7 @@ Para ciertos trabajos son altamente recomendables, si no es que necesarias, algu
 
 - TikZ {Gráficas}: Este paquete sirve para hacer gráficas en el propio LaTeX. Es perfecto para cuando queremos representar una función teórica y su evolución en un plano cartesiano. También es necesario para hacer arboles de decisión como las de Teoría de Juegos. 
 
-# Licencia 
+## Licencia 
 
 Esta plantilla está distribuida bajo la **LaTeX Project Public License (LPPL) versión 1.3c o posterior**.
 
@@ -97,10 +94,10 @@ Condiciones clave:
 El texto completo de la licencia se puede encontrar en el archivo `LICENSE.txt` o en [LaTeX Project Public License](https://www.latex-project.org/lppl/).
 
 
-# Contribuciones 
+## Contribuciones 
 
 Si deseas contribuir a este proyecto, abre un "issue" (para alertar sobre algún error) o crea un "pull request" (para realizar cambios a la plantilla) en nuestro repositorio de GitHub: https://github.com/alvaromezquita/tfg-economia-uma  
 
-# Agradecimientos 
+## Agradecimientos 
 
 Especial agradecimiento al profesor Gonzalo Fernández de Córdoba Martos, excelente profesor de la facultad. Fue mi tutor de TFG y quien me motivó a realizar este proyecto.
