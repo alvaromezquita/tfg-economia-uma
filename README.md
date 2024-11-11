@@ -14,7 +14,7 @@ Contacto:
 1. Introducción 
 2. Instalación
 3. Instrucciones de uso 
-        1. Otras recomendaciones 
+   - Otras recomendaciones 
 4. Licencia  
 5. Contribuciones
 6. Agradecimientos
