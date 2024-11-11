@@ -1,0 +1,146 @@
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% ARCHIVO DE CONFIGURACIÓN %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Este archivo es mejor no tocarlo si no se sabe lo que se hace. Sin embargo, cualquier cambio en la normativa de estilo, o alguna configuración extra necesaria para un trabajo específico necesita tocar cosas de aquí. 
+% De nuevo, si no eres experimentado, mejor dejarlo así. 
+
+%% PAQUETES %% 
+% Por lo general de aquí no quieres tocar nada, como mucho añadir algun paquete como los recomendados de LEEME.txt
+
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{fancyhdr} % Configurar encabezado y pie de página
+\usepackage{setspace}
+\usepackage[spanish]{babel} % Establece el idioma en español
+\usepackage{hyperref} 
+\usepackage{apacite}
+\usepackage{fontspec}
+\usepackage{titlesec} 
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{boxedminipage}
+\usepackage{graphics} 
+\usepackage{graphpap}    
+\usepackage{booktabs}
+\usepackage{natbib} 
+\usepackage{fvextra}
+\usepackage{float}
+\usepackage{caption} 
+\usepackage{anyfontsize}
+\usepackage{chngcntr}
+\usepackage{titletoc}
+\usepackage{tocloft}
+\usepackage{capt-of}
+
+%% AJUSTES DE LOS PAQUETES %% 
+% En este apartado se configura el documento para que replique el formato exigido por la Facultad de Ciencias Economicas y Empresariales de la Universidad de Málaga. De nuevo, no se recomienda la modificación de estos aparatados, pero puede ser necesario en un determinado contexto.
+
+% Para evitar que el parrafo empiece con sangría
+\setlength{\parindent}{0pt}
+
+% Ajustar espacio entre las entradas del índice
+\setlength{\cftparskip}{5pt}
+
+% Cargar la fuente personalizada
+\setmainfont[
+  Path = ./,
+  Extension = .ttf,
+  UprightFont = GARA, % Fuente normal
+  ItalicFont = GARA-IT, % Fuente en cursiva
+  BoldFont = GARA-BD % Fuente en negrita
+]{GARA}
+
+% Poner en cursiva la descripción
+\captionsetup{
+  font={it} % Definimos explícitamente la fuente aquí
+}
+
+% Formateando los capítulos según normas de estilo 
+\titleformat{\section}
+  {\fontsize{16}{18}\selectfont\bfseries} % Negrita, tamaño 16pt, todo en mayúsculas
+  {}                         % Este campo vacío oculta el número de la sección
+  {0pt}                      % Sin espacio entre el margen y el título
+  {}
+
+% Formateando los epígrafes según normas de estilo 
+\titleformat{\subsection}
+  {\fontsize{14}{16}\selectfont\bfseries} % Negrita, tamaño 14pt
+  {\thesubsection}{1em}{} 
+\titlespacing*{\section}
+  {0pt}{12pt}{6pt}
+
+% Formateando los subepígrafes según normas de estilo 
+\titleformat{\subsubsection}
+  {\fontsize{14}{16}\selectfont\itshape} % Cursiva, tamaño 14pt
+  {\thesubsubsection}{1em}{}  
+\titlespacing*{\subsection}
+  {0pt}{12pt}{6pt}
+
+\renewcommand\normalsize{\fontsize{13}{15.6}\selectfont}
+\normalsize
+
+% Márgenes
+\usepackage[a4paper, left=3cm, right=3cm, top=2.5cm, bottom=2.5cm]{geometry}
+
+% Interlineado
+\setstretch{1.2}
+
+% Encabezado y pie de página
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[R]{\includegraphics[width=4cm]{logo.png}} % Logo de la Facultad a la derecha
+\fancyfoot[C]{\thepage} % Número de página centrado en el pie de página
+
+% Encabezado y pie de pagina para paginas especiales (índice, bibliografia...)
+\fancypagestyle{plain}{
+  \fancyhf{} % Limpiar encabezados y pies de página
+  \fancyhead[R]{\includegraphics[width=4cm]{logo.png}} % Imagen en el encabezado izquierdo
+  \fancyfoot[C]{\thepage} % Número de página en el pie de página
+}
+
+\renewcommand{\headrulewidth}{0pt}
+\setcounter{tocdepth}{3}
+\counterwithout{section}{chapter}
+\counterwithin{table}{section}
+\numberwithin{figure}{section} % Numeración de figuras por sección
+\numberwithin{table}{section} % Numeración de tablas por sección 
+
+% Estilo para las secciones (en negrita)
+\titlecontents{section}
+  [0em] % Espacio izquierdo
+  {\bfseries} % Formato de la etiqueta
+  {\thecontentslabel\hspace{1em}} % Formato del número de sección
+  {} % Espacio entre la etiqueta y el título
+  {\titlerule*[0.5pc]{.}\contentspage} % Formato del título
+
+% Estilo para las subsecciones
+\titlecontents{subsection}
+  [1.5em] % Espacio izquierdo
+  {\normalfont} % Formato de la etiqueta
+  {\thecontentslabel\hspace{1em}} % Formato del número de subsección
+  {} % Espacio entre la etiqueta y el título
+  {\titlerule*[0.5pc]{.}\contentspage} % Formato del título
+
+\titlecontents{subsubsection}
+  [3em] % Indentación para subsubsección
+  {\thecontentslabel\hspace{1em}} % Formato del número de subsubsección
+  {} % Espacio entre la etiqueta y el título
+  {} % No se usa prefijo antes del título
+  {\titlerule*[0.5pc]{.}\contentspage} % Puntos de conexión y número de página
+
+  
+% Definir el formato para las secciones en el TOC (table of contents)
+\titlecontents{section}
+  [0em] % Espacio izquierdo
+  {} % Formato de la etiqueta (vacío para eliminar el número)
+  {} % Formato del número de sección (vacío)
+  {} % Espacio entre la etiqueta y el título
+  {\titlerule*[0.5pc]{.}\contentspage} % Formato del título
+  
+\renewcommand{\cftsecdotsep}{4} % Ajusta para secciones
+\renewcommand{\cftsubsecdotsep}{4} % Ajusta para subsecciones
+\renewcommand{\cftsubsubsecdotsep}{4} % Ajusta para subsubsecciones
+\newcommand{\fuente}[1]{\fontsize{14}{16}\selectfont\itshape}
