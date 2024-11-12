@@ -106,14 +106,20 @@ Y que cuento con el visto bueno de mi tutor/a para solicitar la defensa en este 
 % Índice (NO TOCAR)
 \renewcommand{\contentsname}{ÍNDICE} 
 \clearpage
-\pagestyle{fancy}% fancy page style in TOC
 \tableofcontents
 
 % Resumen, Palabras Clave y Título en Inglés 
 \newpage 
+
+% Encabezado y pie de página
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[R]{\includegraphics[width=4cm]{logo.png}} % Logo de la Facultad a la derecha
+\fancyfoot[C]{\fontsize{13pt}{15pt}\selectfont\thepage} % Número de página centrado en el pie de página
+
 \pagenumbering{arabic} %Cambia la numeracion a romana
-\noindent {\fontsize{16}{19.2}\selectfont \textbf{Título en inglés}} % Apartado "Título en ingles" formateado
-\addcontentsline{toc}{section}{Título en inglés} % Añadir al índice
+
+\section{Título en inglés}
 
 \vspace{12pt}
 
@@ -121,8 +127,7 @@ Aquí escribes la traducción de tu título al inglés (no lo escribas todo en m
 
 \vspace{12pt}
 
-\noindent {\fontsize{16}{19.2}\selectfont \textbf{Resumen}}
-\addcontentsline{toc}{section}{Resumen} 
+\section{Resumen}
 
 \vspace{12pt}
 
@@ -130,8 +135,7 @@ Aquí escribes tu resumen de no más de 200 palabras.
 
 \vspace{12pt}
 
-{\fontsize{16}{19.2}\selectfont \textbf{Palabras clave}}
-\addcontentsline{toc}{section}{Palabras Clave} % Añadir al índice
+\section{Palabras clave}
 
 \vspace{12pt}
 
@@ -190,6 +194,8 @@ Todo TFG debe finalizar con unas conclusiones, que recojan tu análisis y aporta
 \renewcommand{\bibfont}{\fontsize{13}{15}\selectfont} % Cambiar a 13 puntos el tamaño del texto
 \bibliography{bib_tfg} % Llamada a la bibliografía
 \addcontentsline{toc}{section}{Bibliografía} % Añadir al índice 
+
+\vspace{12pt}
 
 \section{Anexo Legislación}
 
