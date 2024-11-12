@@ -30,7 +30,7 @@ El entorno LaTeX ofrece una solución eficiente a estos problemas, permitiendo a
 
 Como la Facultad de Ciencias Económicas y Empresariales de la Universidad de Málaga exige un formato muy específico para estos trabajos, esta platilla está propuesta para eliminar esas horas extra de trabajo en formatear un documento .tex y que el estudiante, de nuevo, se centre en lo importante: El contenido del trabajo. 
 
-Si eres nuevo usando LaTeX, es altamente recomendable buscar tutoriales porque no es un entorno amigable con el usuario al principio, aunque existen muy buen material en la red que cualquier persona sin experiencia puede entender facilmente. De igual manera, aunque seas experimentado, te recomiendo que sigas las instrucciones que siguen a continuación.
+Si eres nuevo usando LaTeX, es altamente recomendable buscar tutoriales porque no es un entorno amigable con el usuario al principio, aunque existe muy buen material en la red que cualquier persona sin experiencia puede entender facilmente. De igual manera, aunque seas experimentado, te recomiendo que sigas las instrucciones que siguen a continuación.
 
 ## Instalación 
 
