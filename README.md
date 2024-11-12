@@ -87,7 +87,9 @@ Para ciertos trabajos son altamente recomendables, si no es que necesarias, algu
 
 - Verbatim {Programación}: Este paquete nos sirve para dar formato a scripts de programación y que se distinga del resto del documento. La mayor pega es que no remarca los comandos del lenguaje que uses, o al menos no de forma predeterminada. 
 
-- TikZ {Gráficas}: Este paquete sirve para hacer gráficas en el propio LaTeX. Es perfecto para cuando queremos representar una función teórica y su evolución en un plano cartesiano. También es necesario para hacer arboles de decisión como las de Teoría de Juegos. 
+- TikZ {Gráficas y árboles}: Este paquete sirve para hacer gráficas en el propio LaTeX. Es perfecto para cuando queremos representar una función teórica y su evolución en un plano cartesiano. También es necesario para hacer arboles de decisión como las de Teoría de Juegos. 
+
+Como podrás asumir, estos deben ser incluidos con el resto de paquetes en el archivo `config.tex`
 
 ## Licencia 
 
