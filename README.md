@@ -30,9 +30,15 @@ Como la Facultad de Ciencias Económicas y Empresariales de la Universidad de M�
 
 Si eres nuevo usando LaTeX, es altamente recomendable buscar tutoriales porque no es un entorno amigable con el usuario al principio, aunque existen muy buen material en la red que cualquier persona sin experiencia puede entender facilmente. De igual manera, aunque seas experimentado, te recomiendo que sigas las instrucciones que siguen a continuación.
 
-## Instalación local
+## Instalación 
 
-(Puedes ignorar esta parte si vas a utilizar Overleaf.) 
+### Overleaf (Opción recomendada para principiantes)
+
+Para aquellos que quieran trabajar en Overleaf, después de registrarse en la pagina web (puedes usar el correo de la UMA para acceder a ciertas ventajas), deberás ingresar al [enlace del proyecto](https://www.overleaf.com/read/vryztbsjmqcr#d0582b). 
+
+Una vez dentro estarás en un documento que no podrás modificar nada, por lo que tendrás que ir al boton "Menu" (el que hay en la esquina superior izquierda)  y, la sección de "actions" darle a "Copy Project". Esto creara un proyecto en tu cuenta con todos los archivo de esta plantilla, en donde ya podrás trabajar tu TFG.
+
+### Local
 
 En caso de querer trabajar con el localmente (basicamente en un ordenador y no en la nube) sigue los pasos descritos a continuación: 
 
@@ -42,7 +48,7 @@ En caso de querer trabajar con el localmente (basicamente en un ordenador y no e
 
 3. Por último, deberás tener instalado un lector de PDFs en el ordenador. Recomiendo SumatraPDF por ser ligero y no bloquear los PDFs, pero puedes usar Adobe Acrobat u otro similar si lo tienes instalado 
 
-Después de configurar tu entorno local, descarga la carpeta "Proyecto Platilla UMA" del repositorio de GitHub (para ello le das al boton verde "code" y descargas el .zip y lo descomprimes). Corretamente instalado el entorno LaTeX, main.tex debería compilar correctamente el PDF.
+Después de configurar tu entorno local, descarga la carpeta "Proyecto Platilla UMA" del repositorio de [GitHub](https://github.com/alvaromezquita/tfg-economia-uma/archive/refs/heads/main.zip). Corretamente instalado el entorno LaTeX, main.tex debería compilar correctamente el PDF.
 
 
 ## Instrucciones de uso 
@@ -54,6 +60,10 @@ Principalmente utilizarás "main.tex", y "config.tex" solo cuando necesites o in
 Si no es plenamente necesario y/o no se sabe que está haciendo, NO TOCAR "config.tex". Si sabes lo que haces, siempre puedes hacer y deshacer a tu gusto. 
 
 Algunos puntos importantes extra a mencionar son: 
+
+- Guiate de los comentarios. Algunas partes son complicadas de ver para el usuario nuevo en LaTeX, por lo que utiliza los comentarios para guiarte y saber que poner en cada sitio
+
+- [Solo para Overleaf] Si no sabes donde se encuentra algo en `main.tex`, compila el PDF y dale doble click sobre el sitio que estás buscando. Eso te dirigirá a la linea de código correspondiente.  
 
 - Utilizar \vspace{12pt}. Esto permite generar un espacio entre parrafos de 12 puntos (como exigen las normas de estilo). Será como tu intro básico, asi que es recomendable copiarlo para pegarlo constantemente. 
 
