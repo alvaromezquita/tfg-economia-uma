@@ -12,11 +12,13 @@ Contacto:
 
 1. Introducción 
 2. Instalación
-3. Instrucciones de uso 
+   - Overleaf
+   - Local
+4. Instrucciones de uso 
    - Paquetes recomendados
-4. Licencia  
-5. Contribuciones
-6. Agradecimientos
+5. Licencia  
+6. Contribuciones
+7. Agradecimientos
 
 ## Introducción
 
