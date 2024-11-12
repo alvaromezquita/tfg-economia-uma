@@ -10,15 +10,15 @@ Contacto:
 
 ## Índice 
 
-1. Introducción 
-2. Instalación
-   - Overleaf
-   - Local
-4. Instrucciones de uso 
-   - Paquetes recomendados
-5. Licencia  
-6. Contribuciones
-7. Agradecimientos
+1. [Introducción](#introducción)  
+2. [Instalación](#instalación)  
+   - [Overleaf](#overleaf)  
+   - [Local](#local)  
+3. [Instrucciones de uso](#instrucciones-de-uso)  
+   - [Paquetes recomendados](#paquetes-recomendados)  
+4. [Licencia](#licencia)  
+5. [Contribuciones](#contribuciones)  
+6. [Agradecimientos](#agradecimientos)  
 
 ## Introducción
 
@@ -34,8 +34,8 @@ Si eres nuevo usando LaTeX, es altamente recomendable buscar tutoriales porque n
 
 ## Instalación 
 
-### Overleaf (Opción recomendada para principiantes)
-
+### Overleaf 
+#### (Opción recomendada para principiantes)
 Para aquellos que quieran trabajar en Overleaf, después de registrarse en la pagina web (puedes usar el correo de la UMA para acceder a ciertas ventajas), deberás ingresar al [enlace del proyecto](https://www.overleaf.com/read/vryztbsjmqcr#d0582b). 
 
 Una vez dentro estarás en un documento que no podrás modificar nada, por lo que tendrás que ir al boton "Menu" (el que hay en la esquina superior izquierda)  y, la sección de "actions" darle a "Copy Project". Esto creara un proyecto en tu cuenta con todos los archivo de esta plantilla, en donde ya podrás trabajar tu TFG.
