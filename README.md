@@ -1,10 +1,10 @@
 
-# Platilla de TFG en LaTeX 2024-2025
+# Platilla de TFG en LaTeX 2025-2026
 
 Autor: Álvaro Mezquita Martínez 
 
 Contacto: 
-- E-mail: alvaromezquitam@gmail.com
+- E-mail: alvaromezquitam@proton.me
 - Linkedin: https://www.linkedin.com/in/%C3%A1lvaro-mezquita-mart%C3%ADnez-35956919a/
 - GitHub: https://github.com/alvaromezquita 
 
@@ -50,7 +50,7 @@ En caso de querer trabajar con el localmente (basicamente en un ordenador y no e
 
 3. Por último, deberás tener instalado un lector de PDFs en el ordenador. Recomiendo SumatraPDF por ser ligero y no bloquear los PDFs, pero puedes usar Adobe Acrobat u otro similar si lo tienes instalado 
 
-Después de configurar tu entorno local, descarga la carpeta "Proyecto Platilla UMA" del repositorio de [GitHub](https://github.com/alvaromezquita/tfg-economia-uma/archive/refs/heads/main.zip). Corretamente instalado el entorno LaTeX, main.tex debería compilar correctamente el PDF.
+Después de configurar tu entorno local, descarga la carpeta "Proyecto Platilla UMA" del repositorio de [GitHub](https://github.com/alvaromezquita/tfg-economia-uma/archive/refs/heads/main.zip). Corretamente instalado el entorno LaTeX, main.tex debería compilarse correctamente en un PDF.
 
 
 ## Instrucciones de uso 
@@ -66,8 +66,6 @@ Algunos puntos importantes extra a mencionar son:
 - Guiate de los comentarios. Algunas partes son complicadas de ver para el usuario nuevo en LaTeX, por lo que utiliza los comentarios para guiarte y saber que poner en cada sitio
 
 - [Solo para Overleaf] Si no sabes donde se encuentra algo en `main.tex`, compila el PDF y dale doble click sobre el sitio que estás buscando. Eso te dirigirá a la linea de código correspondiente.  
-
-- Utilizar \vspace{12pt}. Esto permite generar un espacio entre parrafos de 12 puntos (como exigen las normas de estilo). Será como tu intro básico, asi que es recomendable copiarlo para pegarlo constantemente. 
 
 - Existen varios comandos \makebox[]{\dotfill} en lugares que se tiene que rellenar con palabras o numero (no en el índice), por lo que puedes eliminarlo sin problema y escribir lo que se requiera
 
@@ -85,7 +83,7 @@ Algunos puntos importantes extra a mencionar son:
 
 Para ciertos trabajos son altamente recomendables, si no es que necesarias, algunos paquetes que voy a listar: 
 
-- Verbatim {Programación}: Este paquete nos sirve para dar formato a scripts de programación y que se distinga del resto del documento. La mayor pega es que no remarca los comandos del lenguaje que uses, o al menos no de forma predeterminada. 
+- Minted {Programación}: Este paquete nos sirve para dar formato a scripts de programación y que se distinga del resto del documento. A diferencia de otros como verbatim, este paquete sí remarca el codigo con color y muchas opciones de personalización.
 
 - TikZ {Gráficas y árboles}: Este paquete sirve para hacer gráficas en el propio LaTeX. Es perfecto para cuando queremos representar una función teórica y su evolución en un plano cartesiano. También es necesario para hacer arboles de decisión como las de Teoría de Juegos. 
 
