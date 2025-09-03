@@ -59,8 +59,6 @@ Si no es plenamente necesario y/o no se sabe que está haciendo, NO TOCAR "confi
 
 Algunos puntos importantes extra a mencionar son: 
 
-- Utilizar \vspace{12pt}. Esto permite generar un espacio entre parrafos de 12 puntos (como exigen las normas de estilo). Será como tu intro básico, asi que es recomendable copiarlo para pegarlo constantemente. 
-
 - Existen varios comandos \makebox[]{\dotfill} en lugares que se tiene que rellenar con palabras o numero (no en el índice), por lo que puedes eliminarlo sin problema y escribir lo que se requiera
 
 - Copia y pega el código de la imagen de ejemplo siempre que quieras poner otra imagen o figura (esto es tablas, graficas hechas con Tikz...). Escribir esto de otra manera o con otro paquete dará lugar, muy probablemente, a incumplir las normas de estilo. 
