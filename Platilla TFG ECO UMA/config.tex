@@ -33,7 +33,9 @@
 \usepackage{chngcntr}
 \usepackage{titletoc}
 \usepackage{tocloft}
-\usepackage{capt-of}
+\usepackage{capt-of} 
+\usepackage{etoolbox}
+
 
 %% AJUSTES DE LOS PAQUETES %% 
 % En este apartado se configura el documento para que replique el formato exigido por la Facultad de Ciencias Economicas y Empresariales de la Universidad de Málaga. De nuevo, no se recomienda la modificación de estos aparatados, pero puede ser necesario en un determinado contexto.
@@ -108,7 +110,12 @@
 \counterwithout{section}{chapter}
 \counterwithin{table}{section}
 \numberwithin{figure}{section} % Numeración de figuras por sección
-\numberwithin{table}{section} % Numeración de tablas por sección 
+\numberwithin{table}{section} % Numeración de tablas por sección  
+
+% Para que el índice "rompa" cuando sobrepase la página [package: etoolbox]
+\makeatletter
+\pretocmd{\contentsline}{\penalty 9999}{}{}
+\makeatother
 
 % Estilo para las secciones (en negrita)
 \titlecontents{section}
